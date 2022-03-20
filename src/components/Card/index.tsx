@@ -8,11 +8,12 @@ type CardProps = {
   imageSource: ImageSourcePropType;
   title: string;
   description: string;
+  buttonText: string
   buttonType?: ButtonType,
   isButtonLoading?: boolean
 }
 
-export const Card = ({imageSource, title, description, buttonType, isButtonLoading}: CardProps) => {
+export const Card = ({imageSource, title, description, buttonType, isButtonLoading, buttonText}: CardProps) => {
   return (
     <Container>
         <CardContainer>
@@ -24,7 +25,7 @@ export const Card = ({imageSource, title, description, buttonType, isButtonLoadi
             <Description numberOfLines={7}>{description}</Description>
           </Info>
         </CardContainer>
-        <Button title="Remove from Queue" type={buttonType} isLoading={isButtonLoading}/>
+        <Button title={buttonText}type={buttonType} isLoading={isButtonLoading}/>
       </Container>
   )
 }
