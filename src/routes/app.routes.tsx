@@ -1,7 +1,7 @@
 import React from "react";
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { useTheme } from "styled-components";
-import {MaterialIcons} from '@expo/vector-icons'
+import { MaterialIcons } from '@expo/vector-icons'
 
 import { WatchList } from "../screens/Watchlist";
 import { NewMovie } from "../screens/NewMovie";

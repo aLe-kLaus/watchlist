@@ -45,3 +45,19 @@ export const Description = styled.Text`
   font-family: ${({theme}) => theme.fonts.medium};
   font-size: 14px;
 `
+
+export const Button = styled.TouchableOpacity`
+ flex: 1;
+  max-height: 40px;
+  min-height: 40px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+`
+
+export const ButtonText = styled.Text`
+  font-size: 15px;
+  color: ${({theme}) => theme.colors.light};
+  font-family: ${({theme}) => theme.fonts.bold};
+  letter-spacing: 2px;
+`
