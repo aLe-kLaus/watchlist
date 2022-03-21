@@ -6,7 +6,7 @@ import cardDefaultSource from '../../assets/not-found.png'
 import { Container} from "./styles"
 import { Card } from "../../components/Card"
 import { dataKey, Movie } from "../../types"
-import { Context } from "../../Context"
+import { Context } from "../../context"
 
 export const WatchList = () => {
   const {storageData, setStorageData} = useContext(Context)

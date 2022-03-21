@@ -9,7 +9,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme';
 import { StatusBar } from 'expo-status-bar';
 import { dataKey, Movie } from './src/types';
-import { Context } from './src/Context';
+import { Context } from './src/context';
 
 export default function App() {
   const [storageData, setStorageData] = useState<Movie[]>([])

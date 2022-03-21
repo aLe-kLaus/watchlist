@@ -10,7 +10,7 @@ import { getMoviesByName } from "../../services"
 import { FlatList } from "react-native-gesture-handler"
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { dataKey, Movie } from "../../types"
-import { Context } from "../../Context"
+import { Context } from "../../context"
 
 
 export const NewMovie = () => {
